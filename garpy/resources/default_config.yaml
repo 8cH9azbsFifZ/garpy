@@ -1,3 +1,4 @@
+#cf https://github.com/magsol/garmin/blob/master/download.py
 backup-dir: 'activities'
 endpoints:
   SSO_LOGIN_URL: "https://sso.garmin.com/sso/signin"
@@ -26,3 +27,8 @@ activities:
     tolerate:
       - 404
       - 500
+
+#ACTIVITIES = "https://connect.garmin.com/modern/proxy/activitylist-service/activities/search/activities?start=%s&limit=%s"
+#WELLNESS = "https://connect.garmin.com/modern/proxy/userstats-service/wellness/daily/%s?fromDate=%s&untilDate=%s"
+#DAILYSUMMARY = "https://connect.garmin.com/modern/proxy/wellness-service/wellness/dailySummaryChart/%s?date=%s"
+

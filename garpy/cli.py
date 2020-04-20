@@ -33,6 +33,14 @@ def main():
     help="Username of your Garmin account",
 )
 @click.option(
+    "--displayname",
+    "-d",
+    prompt=True,
+    default=config.get("displayname"),
+    metavar="{displayname}",
+    help="Displayname of your Garmin account",
+)
+@click.option(
     "--password",
     "-p",
     prompt=True,
