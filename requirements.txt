@@ -1,0 +1,13 @@
+PyYAML
+attrs
+certifi
+chardet
+click 
+idna
+pendulum
+python-dateutil
+pytzdata
+requests
+six
+tqdm
+urllib3
