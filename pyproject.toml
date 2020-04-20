@@ -5,7 +5,6 @@ description = "Python client for downloading activities from Garmin Connect"
 authors = ["Felipe Aguirre Martinez <felipeam86@gmail.com>"]
 license = "MIT"
 readme = "README.rst"
-homepage = "https://github.com/felipeam86/garpy"
 
 [tool.poetry.scripts]
 garpy = "garpy.cli:main"
@@ -20,7 +19,7 @@ click = "^7.0"
 tqdm = "^4.36"
 
 [tool.poetry.dev-dependencies]
-pytest = "^5.1"
+pytest = "^3.0"
 pytest-cov = "^2.7"
 coveralls = "^1.8"
 
