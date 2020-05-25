@@ -18,6 +18,7 @@ class WellnessDownloader:
     backup_dir: Path = attr.ib(default=config["backup-dir"])
 
 
+
 @attr.s
 class ActivitiesDownloader:
     """Class for doing incremental backups of your Garmin activitiess

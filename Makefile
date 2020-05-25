@@ -1,5 +1,5 @@
 VER=0.2.1
-build:
+docker-build:
 	docker build . -t garpy:${VER} -t asdlfkj31h/garpy:${VER}
 
 run:

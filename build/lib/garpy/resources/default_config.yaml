@@ -1,0 +1,34 @@
+#cf https://github.com/magsol/garmin/blob/master/download.py
+backup-dir: 'activities'
+endpoints:
+  SSO_LOGIN_URL: "https://sso.garmin.com/sso/signin"
+  ACTIVITY_LIST: "https://connect.garmin.com/modern/proxy/activitylist-service/activities/search/activities"
+activities:
+  summary:
+    endpoint: "https://connect.garmin.com/modern/proxy/activity-service/activity/{id}"
+    suffix: "_summary.json"
+  details:
+    endpoint: "https://connect.garmin.com/modern/proxy/activity-service/activity/{id}/details"
+    suffix: "_details.json"
+  gpx:
+    endpoint: "https://connect.garmin.com/modern/proxy/download-service/export/gpx/activity/{id}"
+    suffix: ".gpx"
+    tolerate:
+      - 404
+      - 204
+  tcx:
+    endpoint: "https://connect.garmin.com/modern/proxy/download-service/export/tcx/activity/{id}"
+    suffix: ".tcx"
+    tolerate:
+      - 404
+  original:
+    endpoint: "https://connect.garmin.com/modern/proxy/download-service/files/activity/{id}"
+    suffix: ".fit"
+    tolerate:
+      - 404
+      - 500
+
+#ACTIVITIES = "https://connect.garmin.com/modern/proxy/activitylist-service/activities/search/activities?start=%s&limit=%s"
+#WELLNESS = "https://connect.garmin.com/modern/proxy/userstats-service/wellness/daily/%s?fromDate=%s&untilDate=%s"
+#DAILYSUMMARY = "https://connect.garmin.com/modern/proxy/wellness-service/wellness/dailySummaryChart/%s?date=%s"
+

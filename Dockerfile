@@ -9,6 +9,7 @@ ADD ./requirements.txt /garpy
 RUN pip install -r /garpy/requirements.txt
 
 ADD ./ /usr/src/app
+
 RUN pip install -e .
 
 #RUN pip install -U garpy
